@@ -1,0 +1,29 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <nav>
+                <input id="color-input" type="color" value="#F55A5A">
+                <select name='color-scheme' id='color-scheme'>
+                    <option value="monochrome">Monocrome</option>
+                    <option value="monochrome-dark">Monocrome-dark</option>
+                    <option value="monochrome-light">Monocrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="bet-color-button">Get color scheme</button>
+            </nav>
+            <div class="color-container" id="color-container"></div>
+            <div class="colors-names" id="colors-names"></div>
+        </div>
+        <div class="modal hidden" id="modal"></div>
+        <script src="index.js"></script>
+    </body>
+</html>

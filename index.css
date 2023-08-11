@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 95vw;
+    min-width: 320px;
+    max-width: 550px;
+    max-height: 550px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #D1D5DB;
+    margin-top: 1em;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 16.4%;
+    padding: 3% 2.5%;
+}
+input {
+    width: 10%;
+    background: linear-gradient(0deg, #D1D5DB, #D1D5DB);
+    border: 0.5px solid #D1D5DB;
+}
+select {
+    width: 60%;
+    padding: 9px 16px 9px 13px;
+    font-weight: 400;
+}
+input, select, button {
+    height: 2.625rem;
+
+}
+
+input, select, button, .colors, .colors-names {
+    cursor: pointer;
+}
+
+button {
+    width: 25%;
+    padding: 9px 11p;
+    font-size: 0.75rem;
+}
+
+select, button, .container {
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    background: white;
+}
+
+.color-container {
+    display: flex;
+    height: 75.27%;
+    min-height: 300px;
+    max-height: 424px; 
+}
+.colors {
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.colors-names {
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.modal {
+    text-align: center;
+    position: fixed;
+    width: 30%;
+    height: 10%;
+    background: #D1D5DB;
+    border-radius: 0.5em;
+    opacity: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;    
+}
+
+.hidden {
+    display: none;
+}
