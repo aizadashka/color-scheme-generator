@@ -1,4 +1,9 @@
-document.getElementById("get-color-button").addEventListener('click', function() {
+document.getElementById("get-color-button").addEventListener('click', getColorScheme)
+document.addEventListener('click', copyToClipboard)
+
+const  modal = document.getElementById('modal')
+
+function getColorScheme() {
     let colorsNamesHTML = ''
     let colorsHTML = ''
     
@@ -15,11 +20,9 @@ document.getElementById("get-color-button").addEventListener('click', function()
             document.getElementById('color-container').innerHTML = colorsHTML
             document.getElementById('colors-names').innerHTML = colorsNamesHTML
         })
-})
+}
 
-const  modal = document.getElementById('modal')
-
-document.addEventListener('click', async function (e) {
+function copyToClipboard(e) {
     let copyText = ''
         
     if (e.target.id[0] === '#') {
@@ -33,5 +36,7 @@ document.addEventListener('click', async function (e) {
             modal.classList.add('hidden')
         }, 2000)
     }
-})
+}
+
+window.onload = getColorScheme
 
