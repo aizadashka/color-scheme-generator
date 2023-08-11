@@ -35,7 +35,7 @@ select {
 }
 input, select, button {
     height: 2.625rem;
-
+    user-select: none;
 }
 
 input, select, button, .colors, .colors-names {
