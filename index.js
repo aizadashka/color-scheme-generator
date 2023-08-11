@@ -1,4 +1,4 @@
-document.getElementById("bet-color-button").addEventListener('click', function() {
+document.getElementById("get-color-button").addEventListener('click', function() {
     let colorsNamesHTML = ''
     let colorsHTML = ''
     
